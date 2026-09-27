@@ -21,3 +21,65 @@ h1{font-weight:700;letter-spacing:-1.5px}h1 em{border:0;color:var(--wine);backgr
 .contact-links a{border-color:var(--line);color:var(--wine)}.contact-links a:hover{background:var(--cream)}.contact-links a:focus-visible{outline-color:var(--wine)}
 dialog{background:#fff}.viewer-media{background:#faf8f5}.close,.viewer-controls button{color:var(--wine)}
 @media(max-width:650px){.hero{padding-block:35px 48px;gap:30px}.hero-board{padding:20px}.hero-covers{gap:10px}.project-visual{padding:24px}.contact{padding:30px 24px}}
+/* Portfolio Series Cards */
+
+.series-box {
+    background: #ffffff;
+    border: 1px solid #f0e4d8;
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 40px rgba(111,0,0,.08);
+}
+
+
+.series-box h4 {
+    color:#6F0000;
+    font-size:24px;
+    margin-bottom:25px;
+    text-align:right;
+}
+
+
+.series-grid,
+.single-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+.series-grid img,
+.single-grid img {
+
+    width:100%;
+    aspect-ratio:9/16;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    background:#FFF3E1;
+
+    transition:.3s ease;
+
+}
+
+
+.series-grid img:hover,
+.single-grid img:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(111,0,0,.18);
+
+}
+
+
+#series,
+#singles {
+
+    margin-top:60px;
+
+}
