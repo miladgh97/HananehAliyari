@@ -23,63 +23,91 @@ dialog{background:#fff}.viewer-media{background:#faf8f5}.close,.viewer-controls 
 @media(max-width:650px){.hero{padding-block:35px 48px;gap:30px}.hero-board{padding:20px}.hero-covers{gap:10px}.project-visual{padding:24px}.contact{padding:30px 24px}}
 /* Portfolio Series Cards */
 
+/* Premium Story Portfolio */
+
 .series-box {
     background: #ffffff;
-    border: 1px solid #f0e4d8;
-    border-radius: 24px;
-    padding: 30px;
-    margin-bottom: 50px;
-    box-shadow: 0 15px 40px rgba(111,0,0,.08);
+    border: 1px solid #F3DCC5;
+    border-radius: 28px;
+    padding: 35px;
+    margin-bottom: 55px;
+    box-shadow: 0 20px 45px rgba(111,0,0,0.06);
 }
 
 
 .series-box h4 {
     color:#6F0000;
     font-size:24px;
-    margin-bottom:25px;
-    text-align:right;
+    margin-bottom:30px;
+    position:relative;
 }
+
+
+.series-box h4::after {
+
+    content:"";
+
+    display:block;
+
+    width:45px;
+
+    height:3px;
+
+    background:#FFF3E1;
+
+    margin-top:12px;
+
+}
+
 
 
 .series-grid,
 .single-grid {
+
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+
+    gap:28px;
+
 }
+
 
 
 .series-grid img,
 .single-grid img {
 
     width:100%;
+
+    height:auto;
+
     aspect-ratio:9/16;
 
-    object-fit:cover;
-
-    border-radius:18px;
+    object-fit:contain;
 
     background:#FFF3E1;
 
-    transition:.3s ease;
+    padding:10px;
+
+    border-radius:20px;
+
+    border:1px solid #EAD2B8;
+
+    box-shadow:
+    0 8px 25px rgba(111,0,0,.08);
+
+    transition:.35s ease;
 
 }
+
 
 
 .series-grid img:hover,
 .single-grid img:hover {
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
     box-shadow:
-    0 20px 40px rgba(111,0,0,.18);
-
-}
-
-
-#series,
-#singles {
-
-    margin-top:60px;
+    0 20px 40px rgba(111,0,0,.16);
 
 }
