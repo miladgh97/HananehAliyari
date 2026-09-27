@@ -111,3 +111,62 @@ dialog{background:#fff}.viewer-media{background:#faf8f5}.close,.viewer-controls 
     0 20px 40px rgba(111,0,0,.16);
 
 }
+/* Single Story Portfolio */
+
+#singles {
+    margin-top: 70px;
+}
+
+
+#singles .subheading {
+    margin-bottom: 35px;
+}
+
+
+.single-grid {
+
+    display:grid;
+
+    grid-template-columns: repeat(2, minmax(220px, 320px));
+
+    justify-content:start;
+
+    gap:35px;
+
+}
+
+
+
+.single-grid img {
+
+    width:100%;
+
+    aspect-ratio:9 / 16;
+
+    object-fit:contain;
+
+    background:#FFF3E1;
+
+    padding:14px;
+
+    border-radius:24px;
+
+    border:1px solid #E8CFAF;
+
+    box-shadow:
+    0 15px 35px rgba(111,0,0,.10);
+
+    transition:.3s ease;
+
+}
+
+
+
+.single-grid img:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 25px 45px rgba(111,0,0,.16);
+
+}
